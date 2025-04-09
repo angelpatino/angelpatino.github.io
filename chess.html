@@ -1,26 +1,18 @@
 <!DOCTYPE html>
-
 <html lang="en">
-
 <head>
-
   <meta charset="UTF-8">
-
   <title>Polish Opening - Chess</title>
   <link rel="stylesheet" href="style.css">
   <link rel="stylesheet" href="https://unpkg.com/chessboardjs@1.0.0/dist/chessboard-1.0.0.min.css">
   <script src="https://unpkg.com/chessboardjs@1.0.0/dist/chessboard-1.0.0.min.js"></script>
-
   <style>
-    /* Add any custom styling here */
+    /* Custom styling for the chessboard */
     #board1 {
         margin: 0 auto;
         background-color: #f0f0f0;
     }
   </style>
-
-
-
 </head>
 
 <body>
@@ -29,6 +21,7 @@
 
 <h1>Polish Opening (1. b4)</h1>
 
+<!-- Chessboard container -->
 <div id="board1" style="width: 400px; height: 400px;"></div>
 
 <h2>Introduction to the Polish Opening</h2>
@@ -51,20 +44,23 @@
   <li><strong>2. g3</strong> — Preparing to fianchetto the bishop on g2, putting pressure on the center and the queenside.</li>
 </ul>
 
+<!-- Include your navbar.js script -->
+<script src="navbar.js"></script>
+
+<!-- Initialize chessboard after page load -->
 <script>
-  var board = ChessBoard('board1', {
+  document.addEventListener('DOMContentLoaded', function() {
+    var board = ChessBoard('board1', {
       draggable: true,
       dropOffBoard: 'trash',
       sparePieces: true,
-  });
+    });
 
-  // Start the board with the Polish Opening setup
-  var polishOpeningPosition = 'rnbqkbnr/pppppppp/8/8/8/8/PPPPPPPP/RNBQKBNR w KQkq - 0 1'; // Standard starting position
-  board.position(polishOpeningPosition);
+    // Start the board with the Polish Opening setup
+    var polishOpeningPosition = 'rnbqkbnr/pppppppp/8/8/8/8/PPPPPPPP/RNBQKBNR w KQkq - 0 1';
+    board.position(polishOpeningPosition);
+  });
 </script>
 
-<script src="navbar.js"></script>
-
 </body>
-
 </html>
