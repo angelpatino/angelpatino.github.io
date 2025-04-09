@@ -4,8 +4,9 @@
   <meta charset="UTF-8">
   <title>Polish Opening - Chess</title>
   <link rel="stylesheet" href="style.css">
-  <link rel="stylesheet" href="https://unpkg.com/chessboardjs@1.0.0/dist/chessboard-1.0.0.min.css">
-  <script src="https://unpkg.com/chessboardjs@1.0.0/dist/chessboard-1.0.0.min.js"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/chessboard.js/1.0.0/css/chessboard.min.css">
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/chessboard.js/1.0.0/js/chessboard.min.js"></script>
   <style>
     /* Custom styling for the chessboard */
     #board1 {
@@ -44,23 +45,8 @@
   <li><strong>2. g3</strong> — Preparing to fianchetto the bishop on g2, putting pressure on the center and the queenside.</li>
 </ul>
 
-<!-- Include your navbar.js script -->
 <script src="navbar.js"></script>
-
-<!-- Initialize chessboard after page load -->
-<script>
-  document.addEventListener('DOMContentLoaded', function() {
-    var board = ChessBoard('board1', {
-      draggable: true,
-      dropOffBoard: 'trash',
-      sparePieces: true,
-    });
-
-    // Start the board with the Polish Opening setup
-    var polishOpeningPosition = 'rnbqkbnr/pppppppp/8/8/8/8/PPPPPPPP/RNBQKBNR w KQkq - 0 1';
-    board.position(polishOpeningPosition);
-  });
-</script>
+<script src="chessboard-init.js"></script>
 
 </body>
 </html>
