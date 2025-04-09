@@ -1,6 +1,6 @@
 /* Navigation bar styles */
 nav {
-  background-color: #333;
+  background-color: transparent;
   padding: 10px 0;
   text-align: center;
 }
@@ -17,19 +17,20 @@ nav ul li {
 }
 
 nav ul li a {
-  color: white;
-  text-decoration: none;
-  font-weight: bold;
+  color: black; /* change if you want a different text color */
+  text-decoration: underline;
+  font-weight: normal; /* removes bold */
+  border-bottom: none; /* no hover border initially */
 }
 
 nav ul li a:hover {
-  color: #ddd;
-  border-bottom: 2px solid #ddd;
+  color: #555;
+  text-decoration: underline;
 }
 
 /* General page layout */
 body {
-  font-family: sans-serif;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   margin: 0;
   padding: 0;
 }
