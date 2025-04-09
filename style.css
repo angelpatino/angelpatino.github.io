@@ -2,7 +2,7 @@
 nav {
   background-color: transparent;
   padding: 10px 0;
-  text-align: center; /* Centers the navigation bar links */
+  text-align: center;
 }
 
 nav ul {
@@ -39,7 +39,7 @@ body {
 /* Main content section */
 main {
   padding: 20px;
-  text-align: left; /* Aligns text to the left */
+  text-align: center;
 }
 
 /* Optional: If you want a centered element like the chessboard */
